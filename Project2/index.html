@@ -6,7 +6,7 @@
     <style>
         body {
             margin: 0;
-            background: #000; /* Черный фон */
+            background: #000;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -14,16 +14,17 @@
         }
         img {
             width: 300px;
-            /* Анимация: логотип плавно увеличивается при появлении */
-            animation: start 1.5s ease-out;
+            animation: fadeIn 1.5s ease-in-out;
+            border-radius: 20px;
+            box-shadow: 0 0 20px #0ff;
         }
-        @keyframes start {
-            from { opacity: 0; transform: scale(0.8); }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.9); }
             to { opacity: 1; transform: scale(1); }
         }
     </style>
 </head>
 <body>
-    <img src="logo2.png" alt="Logo">
+    <img src="ТЕКСТ_ИЗ_BASE64" alt="Logo">
 </body>
 </html>
